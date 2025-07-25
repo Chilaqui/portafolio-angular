@@ -1,0 +1,9 @@
+.custom-navbar {
+  position: sticky;
+  top: 13px; /* separación del top */
+  z-index: 1000; 
+  background-color: #FEFCE8; /* blanco translúcido */
+  backdrop-filter: blur(10px); /* efecto de desenfoque */
+  border-radius: 30px;
+  font-size: 15px;
+}
