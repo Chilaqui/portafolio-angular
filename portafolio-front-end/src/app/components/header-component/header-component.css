@@ -1,9 +1,35 @@
 .custom-navbar {
-  position: sticky;
-  top: 13px; /* separación del top */
-  z-index: 1000; 
-  background-color: #FEFCE8; /* blanco translúcido */
-  backdrop-filter: blur(10px); /* efecto de desenfoque */
-  border-radius: 30px;
+  position: fixed;
+  top: 1%; /* separación del top */
+  z-index: 10000; 
+  backdrop-filter: blur(10px); /* mejor valor para el desenfoque */
+  border-radius: 15px;
   font-size: 15px;
+  width: 100%;
+  height: auto;
+  background-color: rgba(70, 87, 93, 0.3); /* mismo color con 30% de opacidad */
+}
+
+.icon8{
+width: 25px;
+height: 25px;
+}
+
+
+
+.nav-item{
+  padding: 2px;
+  height: auto;
+  width: auto;
+  box-sizing: content-box;
+  
+}
+
+.nav-link, .navbar-brand {
+  padding: 4px 4px;
+  color: #E2E7E9;
+}
+
+a:hover{
+  color: #1D293D;
 }
