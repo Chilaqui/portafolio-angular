@@ -8,7 +8,7 @@ import { FooterComponent } from './components/footer-component/footer-component'
 import { ToggleThemeComponent } from './components/toggle-theme-component/toggle-theme-component';
 import { ProjectCardComponent } from './components/project-card-component/project-card-component';
 import { HomeComponent } from './routes/home-component/home-component';
-import { ProjectsComponent } from './routes/projects-component/projects-component';
+import { ProjectsComponent } from './components/projects-component/projects-component';
 import { ContactComponent } from './routes/contact-component/contact-component';
 
 @NgModule({
