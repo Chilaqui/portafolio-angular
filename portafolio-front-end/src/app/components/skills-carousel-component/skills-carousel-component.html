@@ -1,18 +1,46 @@
-<!-- <div class="skills-carousel-wrapper">
-    <div class="skills-carousel" #carousel>
-        <div class="skill-item" *ngFor="let skill of skills">
-            {{ skill }}
-        </div>
-    </div>
-</div> -->
+
+<!-- Carrusel Skills Lenguajes de Programacion -->
 
 <div class="skills-carousel-wrapper">
+    <h3>Lenguajes de Programacion</h3>
     <div class="skills-carousel" #carousel>
-        <div class="skill-item" *ngFor="let skill of skills">
-            <div class="card" style="width: 18rem;">
-                <img [src]="skill.img" class="card-img-top" [alt]="skill.name">
+        <div class="skill-item" *ngFor="let skillsProgramer of skillsProgramer">
+            <div class="card" >
+                <img [src]="skillsProgramer.img" class="card-img-top" [alt]="skillsProgramer.name">
                 <div class="card-body">
-                    <p class="card-text" >{{ skill.name }}</p>
+                    <p class="card-text" >{{ skillsProgramer.name }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Carrusel Skills FrameWorks, seguridad y autenticacion -->
+
+<div class="skills-carousel-wrapper">
+    <h3>Frameworks Seguridad y Authenticacion</h3>
+    <div class="skills-carousel skills-six" #carousel>
+        <div class="skill-item" *ngFor="let SkillsFrameworks of SkillsFrameworks">
+            <div class="card" >
+                <img [src]="SkillsFrameworks.img" class="card-img-top" [alt]="SkillsFrameworks.name">
+                <div class="card-body">
+                    <p class="card-text" >{{ SkillsFrameworks.name }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Carrusel Skills Herramientas -->
+
+<div class="skills-carousel-wrapper">
+    <h3>Desarrollo y Herramientas</h3>
+    <div class="skills-carousel" #carousel>
+        <div class="skill-item" *ngFor="let SkillsTools of SkillsTools">
+            <div class="card" >
+                <img [src]="SkillsTools.img" class="card-img-top" [alt]="SkillsTools.name">
+                <div class="card-body">
+                    <p class="card-text" >{{ SkillsTools.name }}</p>
                 </div>
             </div>
         </div>
