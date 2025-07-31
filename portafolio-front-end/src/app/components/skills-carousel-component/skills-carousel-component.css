@@ -1,0 +1,58 @@
+.skills-carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  /* border: 1px solid #ddd; */
+  padding: 10px 0;
+  /* background-color: #f8f9fa; */
+}
+
+.skills-carousel {
+  display: flex;
+  gap: 2px;
+  animation: scrollSkills 15s linear infinite;
+  width: max-content;
+}
+
+.skill-item {
+  min-width: 150px;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  /* color: white; */
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 18rem;
+  user-select: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+:host-context(.light-theme) .card{
+    background-color: #E2D3CA;
+    border:  2px solid #1D293D ;
+    
+}
+
+:host-context(.dark-theme) .card{
+    background-color: #1D293D;
+    color: #E2D3CA;
+    border:  2px solid #E2D3CA ;
+    
+
+}
+.skills-carousel:hover {
+  animation-play-state: paused;
+}
+
+
+/* Animación para mover el carrusel */
+@keyframes scrollSkills {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+

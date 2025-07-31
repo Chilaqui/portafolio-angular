@@ -7,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrl: './skills-carousel-component.css'
 })
 export class SkillsCarouselComponent {
+ originalSkills = [
+    'Java',
+    'Spring Boot',
+    'Angular',
+    'TypeScript',
+    'HTML',
+    'CSS',
+    'Git',
+    'SQL',
+    'Docker',
+    'Linux'
+  ];
 
+  skills = [...this.originalSkills, ...this.originalSkills]; 
 }

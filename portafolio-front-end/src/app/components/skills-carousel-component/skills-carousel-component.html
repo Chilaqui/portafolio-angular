@@ -1,1 +1,20 @@
-<p>skills-carousel-component works!</p>
+<!-- <div class="skills-carousel-wrapper">
+    <div class="skills-carousel" #carousel>
+        <div class="skill-item" *ngFor="let skill of skills">
+            {{ skill }}
+        </div>
+    </div>
+</div> -->
+
+<div class="skills-carousel-wrapper">
+    <div class="skills-carousel" #carousel>
+        <div class="skill-item" *ngFor="let skill of skills">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text" >{{ skill }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
