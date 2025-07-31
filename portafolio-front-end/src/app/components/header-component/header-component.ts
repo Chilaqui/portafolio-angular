@@ -8,4 +8,22 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  isDark = true;
+
+  ngOnInit(): void {
+    this.applyTheme(this.isDark);
+  }
+
+  toggleTheme(){
+    this.isDark = !this.isDark;
+    this.applyTheme(this.isDark);
+    
+  }
+
+  applyTheme(isDark: boolean){
+    const body = document.body;
+    body.classList.toggle('dark-theme', this.isDark);
+    body.classList.toggle('light-theme', !this.isDark);
+  }
+
 }
