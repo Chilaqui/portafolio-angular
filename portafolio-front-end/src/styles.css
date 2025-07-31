@@ -1,7 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
-body{
-    background-color: #1D293D;
-}
+
 html {
   scroll-padding-top: 70px; /* ajusta al alto de tu navbar */
 }
+.dark-theme {
+  background: #1D293D;
+  color: #E2D3CA;
+}
+
+.light-theme {
+  background: #E2D3CA;
+  color: #1D293D;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
