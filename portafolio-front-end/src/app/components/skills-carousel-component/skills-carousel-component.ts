@@ -20,20 +20,36 @@ export class SkillsCarouselComponent {
     'Linux'
   ]; */
 
-  originalSkills = [
+   programerSkills = [
     {name: 'Java', img: 'assets/java.png'},
-    {name: 'Spring Boot', img: 'assets/spring.svg'},
-    {name: 'Angular', img: 'assets/angular.svg'},
-    {name: 'TypeScript', img: ''},
-    {name: 'HTML', img: ''},
-    {name: 'CSS', img: ''},
-    {name: 'Git', img: ''},
-    {name: 'SQL', img: ''},
-    {name: 'Docker', img: ''},
-    {name: 'Linux', img: ''}
-
-
+    {name: 'Python', img: 'assets/Spring.png'},
+    {name: 'JavaScript', img: 'assets/type.png'},
+    {name: 'TypeScript', img: 'assets/type.png'},
+    {name: 'SQL', img: ''}
   ];
 
-  skills = [...this.originalSkills, ...this.originalSkills]; 
+   
+
+   frameAndTecnoSSecAutkills = [
+    {name: 'Spring Boot', img: 'assets/java.png'},
+    {name: 'HTML', img: 'assets/Spring.png'},
+    {name: 'CSS', img: 'assets/angular.svg'},
+    {name: 'MySQL', img: 'assets/type.png'},
+    {name: 'JWT', img: 'assets/java.png'},
+    {name: 'Spring Security', img: 'assets/Spring.png'}
+    
+  ];
+
+  devAndToolsSkills = [
+    {name: 'Docker', img: 'assets/java.png'},
+    {name: 'Git', img: 'assets/Spring.png'},
+    {name: 'GitHub', img: 'assets/angular.svg'},
+    {name: 'VS Code', img: 'assets/type.png'},
+    {name: 'Linux', img: ''}
+  ];
+
+  skillsProgramer = [...this.programerSkills, ...this.programerSkills]; 
+  SkillsFrameworks = [...this.frameAndTecnoSSecAutkills, ...this.frameAndTecnoSSecAutkills];
+  SkillsTools = [...this.devAndToolsSkills, ...this.devAndToolsSkills]
+
 }
