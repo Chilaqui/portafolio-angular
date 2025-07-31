@@ -10,13 +10,6 @@
   background-color: rgba(70, 87, 93, 0.3); /* mismo color con 30% de opacidad */
 }
 
-/* .icon8{
-width: 25px;
-height: 25px;
-} */
-
-
-
 .nav-item{
   padding: 2px;
   height: auto;
@@ -25,11 +18,44 @@ height: 25px;
   
 }
 
-.nav-link, .navbar-brand {
+.nav-link, .navbar-brand, i {
   padding: 4px 4px;
-  color: #E2E7E9;
+  /* color: #E2D3CA; */
+  
+}
+/* Sirvio de inicio */
+/* a:hover, i:hover{
+  color: #1D293D;
+} */
+
+/* Cambia el color de la letra al cambiar blanco al cambiar de tema */
+:host-context(.dark-theme) .nav-link,
+:host-context(.dark-theme) .navbar-brand,
+:host-context(.dark-theme) i{
+  color: #E2D3CA;
 }
 
-a:hover{
+/* Cambia el color de el tema a oscuro al cambiar a light */
+:host-context(.light-theme) .nav-link,
+:host-context(.light-theme) .navbar-brand,
+:host-context(.light-theme) i{
   color: #1D293D;
 }
+
+/* El evento al pasar el cursor por ensima cambia de color */
+:host-context(.light-theme) a:hover,
+:host-context(.light-theme) i:hover{
+  color: #E2D3CA;
+}
+
+/* Cambia de color al pasar por ensima */
+:host-context(.dark-theme) a:hover,
+:host-context(.dark-theme) i:hover{
+  color: #1D293D;
+}
+
+
+
+
+
+
