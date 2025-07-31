@@ -10,9 +10,9 @@
     <div class="skills-carousel" #carousel>
         <div class="skill-item" *ngFor="let skill of skills">
             <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img [src]="skill.img" class="card-img-top" [alt]="skill.name">
                 <div class="card-body">
-                    <p class="card-text" >{{ skill }}</p>
+                    <p class="card-text" >{{ skill.name }}</p>
                 </div>
             </div>
         </div>
