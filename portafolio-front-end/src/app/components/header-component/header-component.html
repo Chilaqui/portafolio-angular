@@ -1,5 +1,9 @@
 <nav id="navbar-example2" class="custom-navbar navbar  px-2 mb-0">
-  <a class="navbar-brand" href="#">Developer</a>
+  <a class="navbar-brand" >
+    <button class="btn-outline-dark nav-link">
+      <i class="bi bi-code-slash"></i>
+    </button>
+  </a>
   <ul class="nav nav-pills">
     <li class="nav-item">
       <a class="nav-link" href="#homelink">Home</a>
@@ -13,9 +17,15 @@
     <li class="nav-item">
       <a class="nav-link" [routerLink]="['/contact']">Contact</a>
     </li>
-    <!-- <button class="btn-icon" >
-      
-    </button> -->
+    <li class="nav-item">
+      <button (click)="toggleTheme()" class="btn-outline-dark nav-link">
+        <i [class]="isDark ? 'bi bi-sun-fill' : 'bi bi-moon-fill'"></i>
+      </button>
+      <!-- <i class="bi bi-sun-fill nav-link"></i>  ícono de sol 
+      <i class="bi bi-moon-fill"></i>  ícono de luna  -->
+    </li>
+
+
 
   </ul>
 </nav>
