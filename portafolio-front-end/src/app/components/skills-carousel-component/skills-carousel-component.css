@@ -9,8 +9,19 @@
 .skills-carousel {
   display: flex;
   gap: 2px;
-  animation: scrollSkills 15s linear infinite;
+  animation: scrollSkills 9s linear infinite;
   width: max-content;
+}
+
+.skills-six{
+  display: flex;
+  gap: 2px;
+  animation: scrollSkills 10.8s linear infinite;
+  width: max-content;
+}
+
+.card{
+  width: 7.4rem;
 }
 
 .skill-item {
@@ -22,29 +33,36 @@
   padding: 10px;
   border-radius: 8px;
   text-align: center;
-  min-width: 18rem;
+  min-width: 15rem;
   user-select: none;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
+}
+
+h3{
+  padding-bottom: 5rem;
+  padding-top: 4rem;
 }
 
 :host-context(.light-theme) .card{
     background-color: #E2D3CA;
-    border:  2px solid #1D293D ;
+    border:  1px solid #1D293D ;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.6); /* aura negra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     
 }
 
 :host-context(.dark-theme) .card{
     background-color: #1D293D;
     color: #E2D3CA;
-    border:  2px solid #E2D3CA ;
-    
-
-}
-.skills-carousel:hover {
-  animation-play-state: paused;
+    border:  1px solid #E2D3CA ;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6); /* aura blanca */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover{
+  transform: scale(1.05);
+}
 
 /* Animación para mover el carrusel */
 @keyframes scrollSkills {
@@ -62,9 +80,45 @@
   .skills-carousel {
   display: flex;
   gap: 2px;
-  animation: scrollSkills 20s linear infinite;
+  animation: scrollSkills 11s linear infinite;
+  width: max-content;
+  
+}
+
+.card{
+  width: 5rem;
+  font-size: 0.5rem;
+  font-weight: 500;
+}
+
+.skills-six{
+  display: flex;
+  gap: 2px;
+  animation: scrollSkills 13.2s linear infinite;
   width: max-content;
 }
+
+.skill-item {
+  min-width: 150px;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  /* color: white; */
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 6rem;
+  user-select: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+h3{
+  padding-bottom: 2rem;
+  padding-top: 0.7rem;
+}
+
+
 }
 
 
