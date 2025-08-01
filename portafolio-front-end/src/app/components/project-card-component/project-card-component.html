@@ -1,0 +1,56 @@
+<!-- <div class="container">
+  <div class="row justify-content-center" >
+    <div class="card" style="width: 18rem;" *ngFor="let projectCard of projectCard">
+      <img [src]="projectCard.img" alt="SpringProject">
+      <div class="card-body">
+        <h5 class="card-title">{{projectCard.name}}</h5>
+        <p class="card-text"> {{projectCard.description}} </p>
+        <a href="{{projectCard.link}}" class="btn btn-primary">Repository Chilaqui</a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-4 mb-4" *ngFor="let projectCard of projectCard">
+      <div class="card h-100 shadow border border-white rounded-4" style="width: 100%;">
+        <img [src]="projectCard.img" class="card-img-top" [alt]="projectCard.name">
+        <div class="card-body">
+          <h5 class="card-title">{{projectCard.name}}</h5>
+          <p class="card-text">{{projectCard.description}}</p>
+          <a [href]="projectCard.link" class="btn btn-primary">Repository Chilaqui</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let projectCard of projectCard">
+      <div class="card h-100  border-light aura">
+        <img [src]="projectCard.img" class="card-img-top" alt="{{projectCard.name}}">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{projectCard.name}}</h5>
+          <p class="card-text flex-grow-1">{{projectCard.description}}</p>
+          <a [href]="projectCard.link" class="btn btn-primary mt-auto button-mode">Repositorio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="row">
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" *ngFor="let projectCard of projectCard">
+    <div class="card h-100 shadow-sm border-light aura">
+      <img [src]="projectCard.img" class="card-img-top" alt="{{projectCard.name}}">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">{{projectCard.name}}</h5>
+        <p class="card-text flex-grow-1">{{projectCard.description}}</p>
+        <a [href]="projectCard.link" class="btn btn-primary mt-auto">Repository Chilaqui</a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
