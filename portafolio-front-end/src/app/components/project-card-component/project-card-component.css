@@ -1,3 +1,69 @@
-.container-cards {
-    margin: 15px;
+
+.container{
+    padding: 40px;
 }
+
+.card-img-top {
+  height: 180px;
+  object-fit: contain; /* Para que todas las imágenes encajen sin deformarse */
+  padding: 5px;
+  
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.aura {
+ /*  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Aura blanca */ 
+  border-radius: 12px;
+}
+
+a:hover{
+    transform: scale(1.02);
+}
+
+:host-context(.light-theme) a{
+    border: 0px none;
+    background-color: #1D293D ;
+    text-decoration: none;
+    color: #E2D3CA;
+}
+
+:host-context(.dark-theme) a{
+    border: 0px none;
+    background-color: #E2D3CA ;
+    text-decoration: none;
+    color: #1D293D;
+}
+
+:host-context(.light-theme) .card{
+    background-color: #E2D3CA;
+    border:  1px solid #1D293D ;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3); /* aura negra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+:host-context(.dark-theme) .card{
+    background-color: #1D293D;
+    color: #E2D3CA;
+    border:  1px solid #E2D3CA ;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.3); /* aura blanca */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+@media (max-width: 769px) {
+  .card-img-top {
+    
+    
+  }
+}
+
+
