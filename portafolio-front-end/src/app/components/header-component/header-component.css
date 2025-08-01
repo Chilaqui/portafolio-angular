@@ -23,10 +23,7 @@
   /* color: #E2D3CA; */
   
 }
-/* Sirvio de inicio */
-/* a:hover, i:hover{
-  color: #1D293D;
-} */
+
 
 /* Cambia el color de la letra al cambiar blanco al cambiar de tema */
 :host-context(.dark-theme) .nav-link,
@@ -53,6 +50,8 @@
 :host-context(.dark-theme) i:hover{
   color: #1D293D;
 }
+
+
 
 
 
