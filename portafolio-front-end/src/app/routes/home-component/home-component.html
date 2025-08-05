@@ -1,15 +1,23 @@
 <section id="homelink" class="text-center py-4 ">
     <div class="margin-containers">
         <div class="box-about1">
-            <h1>Hola , Soy Héctor Luis</h1>
-            <p>Ingeniero en Sistemas y Desarollador Back-End especializado en Java Spring Boot. Soy un desarrollador
-                apasionado por el aprendizaje constante. Actualmente estoy enfocándome en construir proyectos con Java y
-                Spring Boot, y me encanta explorar nuevas tecnologías que mejoren mis habilidades como ingeniero en
-                sistemas.</p>
+            <h1>Hola<span class="hand-wave">👋</span>, Soy Héctor Luis</h1>
+            <p>Ingeniero en Sistemas y Desarrollador Back-End especializado en Java y Spring Boot.</p>
+            <p>Soy un desarrollador apasionado por el aprendizaje constante. Actualmente estoy enfocado en construir
+                proyectos utilizando Java, Spring Boot y tecnologías modernas que impulsan el desarrollo backend
+                profesional.</p>
+            <p>Disfruto trabajar en proyectos que representen un reto técnico, integrando buenas prácticas,
+                seguridad y rendimiento.</p>
+            <p>Además, estoy construyendo mi portafolio como carta de presentación profesional, integrando APIs, bases
+                de datos y autenticación para demostrar mis habilidades de forma práctica.</p>
 
+            <div class="social-links">
+                <a href="https://github.com/Chilaqui" target="_blank">GitHub</a>
+            </div>
         </div>
         <div class="box-about2">
-            <img src="/portafolio-front-end/src/app/assets/img/ima.jpeg" alt="">
+            <img class="img-personal" src="assets/CVitae/personal.jpg" alt="Foto Hector">
+            
         </div>
 
 
@@ -17,8 +25,8 @@
     </div>
     <div class="margin-containers" id="skills">
         <div class="skills-column">
-            <h2>¿Cual es mi rol?</h2>
-            <h5>Developer Back-End Java</h5>
+            <h2>¿Mi Rol?</h2>
+            <h5>Developer Back-End</h5>
             <p>He manejado distintas tecnologias que me parmiten construir sistemas variados de el lado del Back-End,
                 actualmente mantengo el aprendizaje constante en estas tecnologias </p>
         </div>
@@ -29,22 +37,28 @@
     </div>
 
     <app-projects-component id="projects"></app-projects-component>
-
+    <h3 class="h3-curriculum">Curriculums</h3>
     <div id="CVitae">
+
         <div>
-            <h3>Curriculum Vitae</h3>
+            <h3>Vitae</h3>
             <img src="assets/CVitae/CVHector.png" alt="Curriculum">
-            <a href="assets/CVitae/CVHector.pdf" download="CV_HectorLuis.pdf" class="btn btn-primary">
+            <a href="assets/CVitae/CVHectorVitae.pdf" download="CVHectorVitae.pdf" target="_blank "
+                class="btn btn-primary btn-hover" (click)="startDownload()">
                 Descargar CV Héctor Luis
             </a>
+            <p *ngIf="showDownloadMessage" class="download-msg">📥 Descargando archivo...</p>
+
 
         </div>
         <div>
-            <h3>Curriculum Terminal</h3>
+            <h3>Vitae Terminal</h3>
             <img src="assets/CVitae/CVTerminal.png" alt="Curriculum">
-            <a href="assets/CVitae/CVTerminal.pdf" download="CV_Hector_Terminal.pdf" class="btn btn-secondary">
+            <a href="assets/CVitae/CV_Hector_Terminal.pdf" download="CV_Hector_Terminal.pdf" target="_blank"
+                class="btn btn-secondary btn-hover" (click)="startDownloadCvTerminal()">
                 Descargar CV Terminal
             </a>
+            <p *ngIf="showDownloadMessageCvTerminal" class="download-msg">📥 Descargando archivo...</p>
 
         </div>
     </div>
