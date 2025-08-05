@@ -1,6 +1,55 @@
 
-h1{
+h1,h2, h3{
     text-align: center;
+    font-size: 50px;
+}
+
+h5{
+  font-size: 30px;
+}
+
+.hand-wave {
+  display: inline-block;
+  animation: wave 2s infinite;
+  transform-origin: 70% 70%;
+  font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+p{
+  font-size: 21px;
+}
+
+.h3-curriculum{
+  text-align: center;
+}
+
+.img-personal {
+  width: 50%;
+  max-width: 280px; /* Ajusta el tamaño máximo sin que se vea enorme */
+  height: 60%;
+  object-fit: cover; /* Recorta visualmente para que se vea bien en cualquier forma */
+  border-radius: 130px; /* Bordes suaves */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* Sombra sutil para que resalte */
+  display: block;
+  margin: 0 auto; /* Centrado horizontal */
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.img-personal:hover {
+  transform: scale(1.05); /* Efecto suave al pasar el mouse, más profesional */
 }
 
 
@@ -9,7 +58,7 @@ h1{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 7px;
 }
 
 .box-about1{
@@ -19,10 +68,36 @@ h1{
     padding: 10px;
     font-size: 22px;
 }
+
 .box-about2{
     height: auto;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+
+}
+
+.social-links a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  padding: 2px;
+
+}
+
+.social-links a:hover {
+  color: #FF2056; /* O el color que uses en tu diseño */
+}
+
+
 
 .skills-column{
     padding: 12px;
@@ -73,6 +148,10 @@ a{
   object-fit: contain;
 }
 
+.btn-hover:hover{
+  transform: scale(1.02);
+}
+
 :host-context(.dark-theme) #VCVitae div,
 :host-context(.dark-theme) a{
     border: 0px none;
@@ -107,5 +186,25 @@ a{
     flex-direction: column;
     align-items: center;
   }
+
+    .img-personal {
+    width: 50%;
+    height: 30%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* Sombra sutil para que resalte */
+    display: block;
+    margin: 0 auto; /* Centrado horizontal */
+    transition: transform 0.3s ease-in-out;
+  
+  }
+  
+  .social-links {
+  margin-top: 15px;
+  gap: 10px;
+  
+
+}
+.social-links a{
+font-size: 17PX;
+}
 
 }
