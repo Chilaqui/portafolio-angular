@@ -8,4 +8,26 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  showDownloadMessage = false;
+  showDownloadMessageCvTerminal = false;
+  
+
+  startDownload() {
+  this.showDownloadMessage = true;
+  setTimeout(() => {
+    this.showDownloadMessage = false;
+  }, 3000);
+  
+}
+
+startDownloadCvTerminal() {
+  this.showDownloadMessageCvTerminal = true;
+  setTimeout(() => {
+    this.showDownloadMessageCvTerminal = false;
+  }, 3000);
+  
+}
+
+
+
 }
