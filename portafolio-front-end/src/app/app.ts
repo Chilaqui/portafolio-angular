@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class App {
   protected title = 'portafolio-front-end';
+  
+  
 }
